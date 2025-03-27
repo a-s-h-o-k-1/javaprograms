@@ -2,20 +2,37 @@ package com.cts.learning.programs;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class StringInterviewQuestions {
     public static void main(String[] args) {
-        System.out.println(recursiveStringReverse("afzal"));
-        stringReversalUsingCharArray("ashok kumar");
-        stringReversalUsingCharArray("vinay");
-        RemoveWhiteSpaces("ashok kumar         0511");
-        frequencyOfCharacter("ashokkumar");
-        System.out.println("both are anagrams: " + checkAnagrams("ashok Kumar", "Ashok"));
+//        System.out.println(recursiveStringReverse("afzal"));
+//        stringReversalUsingCharArray("ashok kumar");
+//        stringReversalUsingCharArray("vinay");
+//        RemoveWhiteSpaces("ashok kumar         0511");
+//        frequencyOfCharacter("ashokkumar");
+//        System.out.println("both are anagrams: " + checkAnagrams("ashok Kumar", "Ashok"));
+        duplicateCharacters("ashokkumar");
     }
 
+    /*
+    find duplicate character in a string
+     */
+    public static void duplicateCharacters(String str) {
+        HashSet<String> duplicateCharacter = new HashSet<>();
+//        for (String i : str.split("")) {
+//            if (!duplicateCharacter.add(i)) {
+//                System.out.println("duplicate characters are :" + i);
+//            }
+//        }
+        /*
+        using streams
+         */
+        Arrays.stream(str.split("")).filter(ch -> !duplicateCharacter.add(ch)).forEach(System.out::println);
+    }
 
     /*
     check both strings are anagrams
