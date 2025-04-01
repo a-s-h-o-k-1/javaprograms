@@ -96,6 +96,8 @@ public class CollectionsDemo {
         -->fast for retreiving the data by using index(arrays follows the indexing)
         --> capacity reaches to 100% it grows to 50%
         -->15
+        -->not synchorinzed(good performence, but less accuracy)l̥
+        -->synchornization(good accuracy, performance is low, if two tasks are running concurrently/simutaneosuly, it will work with one by one )
         50%
         -->22
          */
