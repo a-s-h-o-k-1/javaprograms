@@ -18,8 +18,96 @@ public class StringInterviewQuestions {
 //        reverseEachWordInStringUsingStream("ashok kumar battala");
 //        fillZerosAtEnd(new int[]{12, 0, 7, 0, 8, 0, 3});
 //        fillZerosAtStart(new int[]{12, 0, 7, 0, 8, 0, 3});
-        findLeaders(new int[]{12, 9, 7, 14, 8, 6, 3});
+//      findLeaders(new int[]{12, 9, 7, 14, 8, 6, 3});
+//        int input = 7325;
+//        reveseAndAdd(input);
+//        String input = "ashok is a good boy";
+//        reverseStringWithPreserved(input);
+//        String romanToInteger = "MCMXCIV";
+//        romanToIntegerConversion(romanToInteger);
+        Runtime runtime = Runtime.getRuntime();
+        try {
+            runtime.exec("C:\\Users\\2076320\\eclipse\\jee-2023-064\\eclipse\\eclipse.exe");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
+    }
+
+    public static void romanToIntegerConversion(String input) {
+        HashMap<Character, Integer> data = new HashMap<>();
+        data.put('I', 1);
+        data.put('V', 5);
+        data.put('X', 10);
+        data.put('L', 50);
+        data.put('C', 100);
+        data.put('D', 500);
+        data.put('M', 1000);
+        int result = data.get(input.charAt(input.length() - 1));
+        for (int i = input.length() - 2; i >= 0; i--) {
+            if (data.get(input.charAt(i)) >= data.get(input.charAt(i + 1))) {
+                result = result + data.get(input.charAt(i));
+            } else {
+                result = result - data.get(input.charAt(i));
+            }
+        }
+        System.out.println("result of the roman: " + result);
+    }
+
+    public static void reverseStringWithPreserved(String input) {
+        List<Integer> zeroIndexes = new ArrayList<>();
+        String[] finput = input.split("");
+        String[] flinput = input.split("\\s");
+        for (int i = 0; i < finput.length; i++) {
+            if (finput[i].equals(" ")) {
+                zeroIndexes.add(i);
+            }
+        }
+        String strWithOutSpaces = Arrays.stream(flinput).map(str -> new StringBuffer(str)).collect(Collectors.joining(""));
+        StringBuffer sb = new StringBuffer(strWithOutSpaces).reverse();
+        for (int i : zeroIndexes) {
+            sb.insert(i, " ");
+        }
+        System.out.println("after reversing the string: " + sb.toString());
+    }
+
+    /*
+    palindrome
+     */
+    public static void reveseAndAdd(int number) {
+
+        if (isPalindrome(number)) {
+            System.out.println(number + " is palindrome");
+        } else {
+
+            while (!isPalindrome(number)) {
+                int sum = reverse(number) + number;
+                number = sum;
+            }
+            if (isPalindrome(number)) {
+                System.out.println("palindrome number =" + number);
+            }
+        }
+
+    }
+
+    public static boolean isPalindrome(int number) {
+        int reverse = reverse(number);
+        if (number == reverse) {
+            return true;
+        }
+        return false;
+
+    }
+
+    public static int reverse(int number) {
+        int result = 0;
+        while (number != 0) {
+            int rem = number % 10;
+            result = result * 10 + rem;
+            number = number / 10;
+        }
+        return result;
     }
 
     public static void findLeaders(int[] arr) {
