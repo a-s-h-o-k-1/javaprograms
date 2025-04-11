@@ -1,6 +1,7 @@
 package com.cts.learning.collections;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
@@ -24,9 +25,9 @@ public class HashSetDemo {
 		 */
 		
 	//HashSet<Integer> nums = new HashSet<>();
-	//LinkedHashSet<Integer> nums = new 	LinkedHashSet<>();
-    //LinkedHashSet<Integer> nums = new 	LinkedHashSet<>();
-	TreeSet<Integer> nums = new TreeSet<>();
+	//LinkedHashSet<Integer> nums = new LinkedHashSet<>();
+    //LinkedHashSet<Integer> nums = new LinkedHashSet<>();
+	TreeSet<Integer> nums = new TreeSet<>(Comparator.reverseOrder());
 	Collections.synchronizedSet(nums);
 	nums.add(10);
 	nums.add(7);
