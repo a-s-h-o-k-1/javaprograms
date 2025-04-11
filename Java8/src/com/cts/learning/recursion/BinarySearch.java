@@ -3,7 +3,7 @@ package com.cts.learning.recursion;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {1, 2, 4, 66, 77};
-        int target = 78;
+        int target = 4;
         int indexValue = search(arr, 0, arr.length - 1, target);
         System.out.println("index of the " + target + " : " + indexValue);
     }

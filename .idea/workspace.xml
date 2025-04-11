@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ba7b40-c3e8-4217-ad1f-55754cbb2a97" name="Changes" comment="added new programs" />
+    <list default="true" id="60ba7b40-c3e8-4217-ad1f-55754cbb2a97" name="Changes" comment="added new programs">
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/beans/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/leetcode/Recursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/FactorialUsingRecursion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/PrintBoth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/sortingalgorithms/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/sortingalgorithms/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/sortingalgorithms/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/validations/MinAge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8/src/com/cts/learning/programs/ArraysInterviewQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/programs/ArraysInterviewQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8/src/com/cts/learning/programs/StringInterviewQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/programs/StringInterviewQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/FibonaaciSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/FibonaaciSeries.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -28,27 +44,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ArraysInterviewQuestions.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BinarySearch.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.CollectionsDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.FibonaaciSeries.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.PyramidPatterns.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RecursionDemo.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.StringInterviewQuestions.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/2076320/CognizantLearning/Git Projects/javaprograms&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArraysInterviewQuestions.executor": "Run",
+    "Application.BinarySearch.executor": "Run",
+    "Application.BubbleSort.executor": "Run",
+    "Application.CollectionsDemo.executor": "Run",
+    "Application.FactorialUsingRecursion.executor": "Run",
+    "Application.FibonaaciSeries.executor": "Run",
+    "Application.InsertionSort.executor": "Run",
+    "Application.Main.executor": "Debug",
+    "Application.PrintBoth.executor": "Run",
+    "Application.PyramidPatterns.executor": "Run",
+    "Application.Recursion.executor": "Run",
+    "Application.RecursionDemo.executor": "Debug",
+    "Application.SelectionSort.executor": "Run",
+    "Application.StringInterviewQuestions.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/2076320/CognizantLearning/Git Projects/javaprograms",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font"
   }
-}</component>
-  <component name="RunManager" selected="Application.StringInterviewQuestions">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cts.learning.recursion.BinarySearch" />
+}]]></component>
+  <component name="RunManager" selected="Application.SelectionSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cts.learning.sortingalgorithms.BubbleSort" />
+      <module name="javaprograms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cts.learning.sortingalgorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactorialUsingRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cts.learning.recursion.FactorialUsingRecursion" />
       <module name="javaprograms" />
       <extension name="coverage">
         <pattern>
@@ -73,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cts.learning.sortingalgorithms.Main" />
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cts.learning.sortingalgorithms.InsertionSort" />
       <module name="javaprograms" />
       <extension name="coverage">
         <pattern>
@@ -86,25 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecursionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cts.learning.recursion.RecursionDemo" />
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cts.learning.sortingalgorithms.SelectionSort" />
       <module name="javaprograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cts.learning.recursion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringInterviewQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cts.learning.programs.StringInterviewQuestions" />
-      <module name="javaprograms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cts.learning.programs.*" />
+          <option name="PATTERN" value="com.cts.learning.sortingalgorithms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringInterviewQuestions" />
-        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.FactorialUsingRecursion" />
         <item itemvalue="Application.FibonaaciSeries" />
-        <item itemvalue="Application.RecursionDemo" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -196,17 +218,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/programs/ArraysInterviewQuestions.java</url>
-          <line>135</line>
+          <line>218</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/programs/ArraysInterviewQuestions.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/programs/ArraysInterviewQuestions.java</url>
-          <line>25</line>
+          <line>108</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -235,29 +252,34 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/RecursionDemo.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/FibonaaciSeries.java</url>
           <line>9</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/BinarySearch.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/BinarySearch.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/programs/StringInterviewQuestions.java</url>
-          <line>66</line>
+          <line>95</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/programs/ArraysInterviewQuestions.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/programs/ArraysInterviewQuestions.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/RecursionDemo.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/recursion/RecursionDemo.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/programs/PyramidPatterns.java</url>
@@ -267,6 +289,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Java8/src/com/cts/learning/leetcode/Recursion.java</url>
+          <line>6</line>
+          <properties class="com.cts.learning.leetcode.Recursion" method="climbStairs">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

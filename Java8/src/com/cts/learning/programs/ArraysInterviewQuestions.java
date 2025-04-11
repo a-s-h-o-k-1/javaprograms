@@ -1,6 +1,7 @@
 package com.cts.learning.programs;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ArraysInterviewQuestions {
     public static void main(String[] args) {
@@ -13,13 +14,95 @@ public class ArraysInterviewQuestions {
         // System.out.println("both arrays are equal or not: " + checkTwoArrays(first, second));
         //System.out.println("both shuffle arrays are equal or not: " + checkTwoshuffleArrays(first, second));
         //  pairOfTwoArraysUsingLogOfN(first, 20);
-        pairOfTwoArraysWithDuplicates(firstwithDuplicates, 20);
+        // pairOfTwoArraysWithDuplicates(firstwithDuplicates, 20);
         //subArrays(second);
         //subArraysWithNumber(second, 9);
         //subArraysWithMaxSum(second, 3);
         //secondLargestNumber(firstwithDuplicates);
-       // sumisEqualToGivenNumberWithDuplicates(firstwithDuplicates, target);
+        // sumisEqualToGivenNumberWithDuplicates(firstwithDuplicates, target);
+        //absoluteDifference(new int[]{5,-3,7,-2});
+        //sortedBasedOntheElements(new int[]{7, 1, 3, 4, 7, 1, 7, 1, 4, 5, 1, 9, 3});
+        //removeDuplicatesFromArrayWithoutCollectionApi(new int[]{4, 3, 2, 4, 9, 2});
+        mergeTwoSortedArrays(new int[]{-7, 12, 17, 29, 41, 41, 56, 79,}, new int[]{-9, -3, 0, 5, 19, 19});
 
+    }
+
+    private static void mergeTwoSortedArrays(int[] arrayA, int[] arrayB) {
+        int firstArrayLength = arrayA.length;
+        int secondArrayLength = arrayB.length;
+        int[] mergeArray = new int[firstArrayLength + secondArrayLength];
+        int i = 0, j = 0, k = 0;
+        while (i < firstArrayLength && j < secondArrayLength) {
+            if (arrayA[i] < arrayB[j]) {
+                mergeArray[k] = arrayA[i];
+                k++;
+                i++;
+            } else {
+                mergeArray[k] = arrayB[j];
+                k++;
+                j++;
+            }
+        }
+        while (i < firstArrayLength) {
+            mergeArray[k] = arrayA[i];
+            k++;
+            i++;
+        }
+        while (j< secondArrayLength) {
+            mergeArray[k] = arrayB[j];
+            k++;
+            j++;
+        }
+        System.out.println("merged Array: "+Arrays.toString(mergeArray));
+    }
+
+    private static void removeDuplicatesFromArrayWithoutCollectionApi(int[] arrayWithDuplicates) {
+        int uniqueNumberLength = arrayWithDuplicates.length;
+        for (int i = 0; i < uniqueNumberLength; i++) {
+            for (int j = i + 1; j < uniqueNumberLength; j++) {
+                if (arrayWithDuplicates[i] == arrayWithDuplicates[j]) {
+                    arrayWithDuplicates[j] = arrayWithDuplicates[uniqueNumberLength - 1];
+                    uniqueNumberLength--;
+                    j--;
+                }
+            }
+        }
+        int[] result = Arrays.copyOf(arrayWithDuplicates, uniqueNumberLength);
+        System.out.println(Arrays.toString(result));
+
+    }
+
+    private static void sortedBasedOntheElements(int[] nums) {
+        ArrayList<Integer> fresult = new ArrayList<>();
+        Map<Integer, Long> result = Arrays.stream(nums).boxed().collect(Collectors.groupingBy(e -> e, Collectors.counting()));
+        result.entrySet()
+                .stream()
+                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
+                .forEach(entry -> {
+                    for (int i = 1; i <= entry.getValue(); i++) {
+                        fresult.add(entry.getKey());
+                    }
+                });
+        System.out.println(fresult);
+    }
+
+    private static void absoluteDifference(int[] arr) {
+
+        int length = arr.length;
+        int min = Integer.MAX_VALUE;
+        int firstElement = arr[0];
+        int secondElement = arr[1];
+        for (int i = 0; i < length; i++) {
+            for (int j = i + 1; j < length; j++) {
+                int absolute = Math.abs(arr[i] - arr[j]);
+                if (absolute < min) {
+                    min = absolute;
+                    firstElement = arr[i];
+                    secondElement = arr[j];
+                }
+            }
+        }
+        System.out.println("min absolute pair: " + firstElement + secondElement);
     }
 
     public static void sumisEqualToGivenNumberWithDuplicates(int[] arr, int target) {

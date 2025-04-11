@@ -10,7 +10,7 @@ public class StringInterviewQuestions {
 //        stringReversalUsingCharArray("ashok kumar");
 //        stringReversalUsingCharArray("vinay");
 //        RemoveWhiteSpaces("ashok kumar         0511");
-//        frequencyOfCharacter("ashokkumar");
+        //    frequencyOfCharacter("ashokkumar");
 //        System.out.println("both are anagrams: " + checkAnagrams("ashok Kumar", "Ashok"));
 //        duplicateCharacters("ashokkumar");
 //        binaryOrnot(1010);
@@ -25,12 +25,41 @@ public class StringInterviewQuestions {
 //        reverseStringWithPreserved(input);
 //        String romanToInteger = "MCMXCIV";
 //        romanToIntegerConversion(romanToInteger);
-        Runtime runtime = Runtime.getRuntime();
-        try {
-            runtime.exec("C:\\Users\\2076320\\eclipse\\jee-2023-064\\eclipse\\eclipse.exe");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        Runtime runtime = Runtime.getRuntime();
+//        try {
+//            runtime.exec("C:\\Users\\2076320\\eclipse\\jee-2023-064\\eclipse\\eclipse.exe");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        // commonCharactersBetweenTwoStringInAlphabeticalOrder("thin sticks", "thick sticks");
+        //swapStringWithThird("ashok", "kumar");
+        swapStringWithoutThird("ashok", "kumar");
+
+
+    }
+
+    private static void swapStringWithoutThird(String fistString, String secondString) {
+
+        fistString = fistString+secondString;
+        secondString = fistString.substring(0,fistString.length()-secondString.length());
+        fistString = fistString.substring(secondString.length());
+        System.out.println(fistString+": "+secondString);
+
+    }
+
+    private static void swapStringWithThird(String firstString, String secondString) {
+
+        String temp = firstString;
+        firstString = secondString;
+        secondString = temp;
+        System.out.println(firstString + " : " + secondString);
+    }
+
+    private static void commonCharactersBetweenTwoStringInAlphabeticalOrder(String f, String s) {
+        TreeSet<String> one = new TreeSet<>(Arrays.asList(f.replaceAll("\\s+", "").split("")));
+        TreeSet<String> two = new TreeSet<>(Arrays.asList(s.replaceAll("\\s+", "").split("")));
+        one.retainAll(two);
+        System.out.println("common characters: " + one);
 
     }
 
